@@ -1,0 +1,51 @@
+/**
+ * Mad Mad Access Pattern
+ * CS 241 - Spring 2016
+ */
+#include <time.h>
+#include "tree.h"
+#include "utils.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/*
+  Look up a few nodes in the tree and print the info they contain.
+  This version uses fseek() and fread() to access the data.
+
+  ./lookup1 <data_file> <word> [<word> ...]
+*/
+
+int main(int argc, char **argv) { 
+  if(argc < 3){
+    printf("\n\tlookup1 <data_file> <word> [<word> ...]\n\n");
+    return 0;
+  }
+  FILE* fp = fopen(argv[1], "r");
+  if(!fp){
+    //printf("Cannot open file %s\n", argv[1]);
+    openFail(argv[1]);
+    return EXIT_FAILURE;
+  }
+  char buffer[200];
+  //fseek(fp, sizeof(BinaryTreeNode), SEEK_SET);
+  size_t cur_node = 4;
+  fseek(fp, cur_node, SEEK_SET); 
+  BinaryTreeNode* temp = malloc(sizeof(BinaryTreeNode));
+  fread(temp, sizeof(BinaryTreeNode), 1, fp);
+  printf("left_child: %u\n", temp->count);
+  fseek(fp, cur_node, SEEK_SET); 
+  fseek(fp, 16, SEEK_CUR);
+  fread(buffer, 200, 1, fp);
+  printf("buffer %s,\n", buffer);
+
+  if(0 == strcmp(buffer, argv[2])){
+    printFound(buffer, temp->count, temp->price); 
+  }
+  
+  for(int i = 2; i < argc; i ++){
+    
+  }
+  
+  return 0; 
+}
+

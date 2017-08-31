@@ -1,0 +1,46 @@
+/**
+ * Parallel Make
+ * CS 241 - Spring 2016
+ */
+
+#include "parmake.h"
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+// Treat this as main
+int parmake(int argc, char **argv) {
+  // good luck!
+	char* fvalue = NULL;
+	char* jvalue = NULL;
+
+	opterr = 0;
+	int fcount = 0;
+	int jcount = 0;
+	int c;
+
+	while((c = getopt(argc, argv, "fj")) != -1){
+		switch(c){
+			case 'f':
+				fvalue = optarg;
+				fcount++;
+				break;
+			case 'j':
+				jvalue = optarg;
+				jcount++;
+				break;
+			default:
+				fprintf(stderr, "./path/to/parmake [-f &lt;path/to/makefile&gt;] [-j &lt;positive-integer&gt;] [targets ...]\n");
+				return 1;
+				break;	
+		}
+	}
+	if(fcount + jcount > 2){
+		fprintf(stderr, "to many arguments\n");
+		return 1;
+	}	
+	printf("fvalue: %s, jvalue: %s\n", fvalue, jvalue);
+
+  return 0;
+}

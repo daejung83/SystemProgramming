@@ -1,0 +1,133 @@
+[
+  {
+    "timestamp": "2016-03-01 14:17:15.878203", 
+    "testcases": [
+      {
+        "description": "./mcontest testers_exe/tester-1 (timeout 60 seconds)", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 160000000\n[mcontest]: AVG: 80000008.000000\n[mcontest]: TIME: 4.453976\n\n\nstderr:\n", 
+        "name": "part1_tester-1", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "./mcontest testers_exe/tester-2 (timeout 60 seconds)", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 125829145\n[mcontest]: AVG: 104857615.000002\n[mcontest]: TIME: 2.362195\n\n\nstderr:\n", 
+        "name": "part1_tester-2", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "./mcontest testers_exe/tester-3 (timeout 60 seconds)", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 1048601\n[mcontest]: AVG: 1048513.624948\n[mcontest]: TIME: 0.335582\n\n\nstderr:\n", 
+        "name": "part1_tester-3", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "./mcontest testers_exe/tester-4 (timeout 60 seconds)", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 1610611965\n[mcontest]: AVG: 1610611453.001224\n[mcontest]: TIME: 2.850242\n\n\nstderr:\n", 
+        "name": "part1_tester-4", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "./mcontest testers_exe/tester-5 (timeout 60 seconds)", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 905762675\n[mcontest]: AVG: 460893499.810996\n[mcontest]: TIME: 0.507797\n\n\nstderr:\n", 
+        "name": "part1_tester-5", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "./mcontest testers_exe/tester-6 (timeout 60 seconds)", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 2624702316\n[mcontest]: AVG: 2150077293.797101\n[mcontest]: TIME: 9.051582\n\n\nstderr:\n", 
+        "name": "part1_tester-6", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "(Pull Time: 2016-03-01 | Revision # 37943)"
+  }, 
+  {
+    "timestamp": "2016-03-08 13:50:15.875970", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 44\n[mcontest]: AVG: 44.000000\n[mcontest]: TIME: 2.336229\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-1", 
+        "description": "./mcontest testers_exe/tester-1 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 275365970\n[mcontest]: AVG: 217010304.087092\n[mcontest]: TIME: 1.965494\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-2", 
+        "description": "./mcontest testers_exe/tester-2 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 1048658\n[mcontest]: AVG: 524306.311307\n[mcontest]: TIME: 2.239309\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-3", 
+        "description": "./mcontest testers_exe/tester-3 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 1610612554\n[mcontest]: AVG: 1610610660.508073\n[mcontest]: TIME: 0.657453\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-4", 
+        "description": "./mcontest testers_exe/tester-4 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 570992486\n[mcontest]: AVG: 275761166.395659\n[mcontest]: TIME: 0.618525\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-5", 
+        "description": "./mcontest testers_exe/tester-5 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 2326440822\n[mcontest]: AVG: 1765986396.093023\n[mcontest]: TIME: 8.574872\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-6", 
+        "description": "./mcontest testers_exe/tester-6 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 1789569870\n[mcontest]: AVG: 887626684.560000\n[mcontest]: TIME: 3.508806\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-7", 
+        "description": "./mcontest testers_exe/tester-7 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 2028179246\n[mcontest]: AVG: 1407794999.600000\n[mcontest]: TIME: 4.902471\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-8", 
+        "description": "./mcontest testers_exe/tester-8 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 1912309358\n[mcontest]: AVG: 1005987068.195316\n[mcontest]: TIME: 0.480536\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-9", 
+        "description": "./mcontest testers_exe/tester-9 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 268635578\n[mcontest]: AVG: 156645503.424231\n[mcontest]: TIME: 14.895759\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-10", 
+        "description": "./mcontest testers_exe/tester-10 (timeout 60 seconds)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nstdout:\nMemory was allocated, used, and freed!\n[mcontest]: STATUS: OK\n[mcontest]: MAX: 1610612858\n[mcontest]: AVG: 715816027.733571\n[mcontest]: TIME: 1.511404\n\n\nstderr:\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "part2_tester-11", 
+        "description": "./mcontest testers_exe/tester-10 (timeout 60 seconds)"
+      }
+    ], 
+    "revision": "(Pull Time: 2016-03-08 | Revision # 43080)"
+  }
+]

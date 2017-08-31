@@ -1,0 +1,177 @@
+[
+  {
+    "timestamp": "2016-04-12 18:45:00.105104", 
+    "testcases": [
+      {
+        "description": "Testing to see if you can decrypt an empty file", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\ndiff: lab/et_tu_brute/svn/ddkim9/et_tu_brute/empty_attempt.txt: No such file or directory\n\n", 
+        "name": "test_empty_file", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing to see if you can decrypt a file with 1 line", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\ndiff: lab/et_tu_brute/svn/ddkim9/et_tu_brute/one_attempt.txt: No such file or directory\n\n", 
+        "name": "test_one_decrypt", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing to see if you can decrypt multiple lines and in parallel", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\ndiff: lab/et_tu_brute/svn/ddkim9/et_tu_brute/parallel_attempt.txt: No such file or directory\n\n", 
+        "name": "test_parallel_decrypt", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Testing to see if your code handles user error like missing input file or output file", 
+        "ptsEarned": 1, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_error_handle", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "checksum": "8dfda420a0ab94ab05705cfb6b6e37de2763ccd4  brutus.c", 
+    "revision": "70813"
+  }, 
+  {
+    "timestamp": "2016-04-12 23:00:00.531118", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsEarned": 1, 
+        "ptsPossible": 1.0, 
+        "name": "test_empty_file", 
+        "description": "Testing to see if you can decrypt an empty file"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n2d1\n< @\n\\ No newline at end of file\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_one_decrypt", 
+        "description": "Testing to see if you can decrypt a file with 1 line"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n0a1,11\n> the assassination of julius caesar was the result of a conspiracy by many roman senators.\n> led by gaius cassius longinus and marcus junius brutus, they stabbed julius caesar to death in a location adjacent to the theatre of pompey on the ides of march (march 15), 44 bc.\n> caesar was the dictator of the roman republic at the time, having recently been declared dictator perpetuo by the senate.\n> this declaration made several senators fear that caesar wanted to overthrow the senate in favor of tyranny.\n> the conspirators were unable to restore the roman republic.\n> the ramifications of the assassination led to the liberators' civil war and, ultimately, to the principate period of the roman empire.\n> et tu, brute?\n> is a latin phrase meaning \"and you, brutus?\" or \"you, too, brutus?\", purportedly as the last words of the roman dictator julius caesar to his friend marcus brutus at the moment of his assassination.\n> it has been argued that the phrase can, if caesar said it, be interpreted as a curse or threat.\n> the complete phrase is said to have been \"you too, my son, will have a taste of power,\" of which caesar only needed to invoke the opening words to foreshadow brutus' own violent death, in response to his assassination.\n> in a similar vein, caesar's words have been interpreted to mean \"your turn next.\" and \"to hell with you too, lad!\"\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 3.0, 
+        "name": "test_parallel_decrypt", 
+        "description": "Testing to see if you can decrypt multiple lines and in parallel"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1, 
+        "ptsPossible": 1.0, 
+        "name": "test_error_handle", 
+        "description": "Testing to see if your code handles user error like missing input file or output file"
+      }
+    ], 
+    "revision": "71052", 
+    "checksum": "51f82e22abe0866f489f993f73be38a4db1b5948  brutus.c"
+  }, 
+  {
+    "timestamp": "2016-04-13 04:00:00.587412", 
+    "testcases": [
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1, 
+        "description": "Testing to see if you can decrypt an empty file", 
+        "name": "test_empty_file", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Testing to see if you can decrypt a file with 1 line", 
+        "name": "test_one_decrypt", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n2d1\n< @\n\\ No newline at end of file\n"
+      }, 
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3, 
+        "description": "Testing to see if you can decrypt multiple lines and in parallel", 
+        "name": "test_parallel_decrypt", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1, 
+        "description": "Testing to see if your code handles user error like missing input file or output file", 
+        "name": "test_error_handle", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }
+    ], 
+    "checksum": "d6a844b8934a25890d86d314194ff1abecd8f02f  brutus.c", 
+    "revision": "71259"
+  }, 
+  {
+    "timestamp": "2016-04-13 18:00:00.598775", 
+    "testcases": [
+      {
+        "description": "Testing to see if you can decrypt an empty file", 
+        "ptsEarned": 1, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "test_empty_file", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing to see if you can decrypt a file with 1 line", 
+        "ptsEarned": 1, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "test_one_decrypt", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing to see if you can decrypt multiple lines and in parallel", 
+        "ptsEarned": 3, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "test_parallel_decrypt", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Testing to see if your code handles user error like missing input file or output file", 
+        "ptsEarned": 1, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_error_handle", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "71813", 
+    "checksum": "284481e1dd9c7cb8b6feb69cead6a7dc82c0a882  brutus.c"
+  }, 
+  {
+    "timestamp": "2016-04-14 00:01:00.111828", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1, 
+        "name": "test_empty_file", 
+        "description": "Testing to see if you can decrypt an empty file"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1, 
+        "name": "test_one_decrypt", 
+        "description": "Testing to see if you can decrypt a file with 1 line"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3, 
+        "name": "test_parallel_decrypt", 
+        "description": "Testing to see if you can decrypt multiple lines and in parallel"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1, 
+        "name": "test_error_handle", 
+        "description": "Testing to see if your code handles user error like missing input file or output file"
+      }
+    ], 
+    "checksum": "284481e1dd9c7cb8b6feb69cead6a7dc82c0a882  brutus.c", 
+    "revision": "72570"
+  }
+]

@@ -1,0 +1,92 @@
+#include "camelCaser.h"
+#include <ctype.h>
+#include <stddef.h>
+#include <stdio.h>
+
+char **camel_caser(const char *input_str) {
+
+	//ispunct() isspace() isalpha()
+
+	int (*p[3])(int c);
+	p[0] = ispunct;
+	p[1] = isspace;
+	p[2] = isalpha;
+
+	int total_molloc_space = 1 + sizeof(char*);
+	int str_len = strlen(input_str);
+	char* size_read = input_str;
+
+	for(int i = 0; i < str_len; i++){
+
+		//printf("ptr: %c\n", *input_str);
+		int result = 0;
+		int key = 0;
+
+		for(int j = 0; j < 3; j++){
+			if(j == 3){
+				//simple check for debugging
+				printf("none of the functions worked\n");
+				break;
+			}
+			result = (*p[j])(*size_read);
+			if(result){
+				//leave for loop if is-whatever was found
+				key = j;
+				break;
+			}	
+		}
+		if(key == 0){
+			total_molloc_space += 4;
+		}else if(key == 2){
+			total_molloc_space += 1;
+		}
+		size_read++;
+	}
+	printf("total_num: %d\n", total_molloc_space);
+
+	if(total_molloc_space < 10){
+		//checking for debugging
+		printf("empty string\n");
+		return NULL;
+	}
+	
+	char* str = malloc(str_len + 1);;
+	strcpy(str, input_str);
+	char* output = (char*)malloc(total_molloc_space);
+	char* temp = (char*)malloc(str_len*2);
+	char* tok = strtok(str, ".,!?;:");
+
+	while(tok){
+		while(isspace(tok[0])){
+			memmove(tok, tok+1, strlen(tok));
+			if(isalpha(tok[0])){
+				tok[0] = tolower(tok[0]);
+			}
+		}
+		
+		strcat(temp, "\'");
+		strcat(temp, tok);
+		strcat(temp, "\',\n");
+		tok = strtok(NULL, ".,!?;:");
+	}
+	printf("temp: %s\n", temp);
+	char* tok_space = strtok(temp, " ");
+	while(tok_space){
+		printf("first: %c, second: %c, thrid: %c\n" , tok_space[0], tok_space[1], tok_space[2]);
+		if(isalpha(tok_space[0])){
+			tok_space[0] = toupper(tok_space[0]);
+		}
+		if(ispunct(tok_space[0]) && isalpha(tok_space[1])){
+			tok_space[1] = tolower(tok_space[1]);
+		}
+		strcat(output, tok_space);
+		//printf("tok_space: %s\n", tok_space);
+		tok_space = strtok(NULL, " ");
+	}
+	printf("output: %s\n", output);	
+	
+	free(temp);	
+	free(str);	
+	
+	return &output;
+}

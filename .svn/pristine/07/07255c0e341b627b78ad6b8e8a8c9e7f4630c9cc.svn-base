@@ -1,0 +1,110 @@
+**ddkim9**
+Write a program that uses write() to print out "Hi! My name is ". 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Write a program that uses write() to print out a triangle of height n to Standard Error 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Take your program from "Hello World" and have it write to a file 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Take your program from "Writing to files" and replace it with printf() 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Name some differences from write() and printf() 
+	(10.0/10)
+--------------------------------------------------------------------------------
+How many bits are there in a byte? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+How many bytes is a char? 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Tell me how many bytes the following are on your machine: int, double, float, long, long long 
+	(5.0/10)
+--------------------------------------------------------------------------------
+If the address of data is 0x7fbd9d40, then what is the address of data+2? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+What is data[3] equivalent to in C? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+Why does this segfault? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+What does sizeof("Hello\0World") return? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+What does strlen("Hello\0World") return? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+Give an example of X such that sizeof(X) is 3 
+	(5.0/10)
+--------------------------------------------------------------------------------
+Give an example of Y such at sizeof(Y) might be 4 or 8 depending on the machine. 
+	(5.0/10)
+--------------------------------------------------------------------------------
+Name me two ways to find the length of argv 
+	(5.0/10)
+--------------------------------------------------------------------------------
+What is argv[0] 
+	(5.0/10)
+--------------------------------------------------------------------------------
+Where are the pointers to environment variables stored? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+What is the results of sizeof(ptr) and sizeof(array)? Explain why. 
+	(5.0/10)
+--------------------------------------------------------------------------------
+What datastucture is managing the lifetime of automatic variables? 
+	(5.0/10)
+--------------------------------------------------------------------------------
+If I want to use data after the lifetime of the function it was created in, then where should I put it and how do I put it there? 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Fill in the blank. In a good C program: "For every malloc there is a ___". 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Name one reason malloc can fail. 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Name some differences between time() and ctime() 
+	(10.0/10)
+--------------------------------------------------------------------------------
+What is wrong with this code snippet? free(ptr); free(ptr); 
+	(10.0/10)
+--------------------------------------------------------------------------------
+What is wrong with this code snippet?free(ptr);printf("%s\n", ptr); 
+	(10.0/10)
+--------------------------------------------------------------------------------
+How can one avoid the previous 2 mistakes? 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Create a struct that represents a Person and typedef, so that "struct Person" can be replaced with a single word. 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Now make two persons "Agent Smith" and "Sonny Moore" on the heap who are 128 and 256 years old respectively and are friends with each other. 
+	(10.0/10)
+--------------------------------------------------------------------------------
+create () should take a name and make a copy of the name and also an age. Use malloc to reserve sufficient memory. Be sure initialize all fields (why?). 
+	(10.0/10)
+--------------------------------------------------------------------------------
+destroy() should free up not only the memory of the person struct but also free all its attributes that are stored on the heap 
+	(10.0/10)
+--------------------------------------------------------------------------------
+What functions can be used for getting characters for stdin and writing them to stdout? 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Name one issue with gets() 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Write code that parses a the string "Hello 5 World" and initializes 3 variables to ("Hello", 5, "World") respectively. 
+	(10.0/10)
+--------------------------------------------------------------------------------
+What does one need to define before using getline()? 
+	(10.0/10)
+--------------------------------------------------------------------------------
+Write a C program to print out the content of a file line by line using getline() 
+	(10.0/10)
+--------------------------------------------------------------------------------
+TOTAL: 290.0/360

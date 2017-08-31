@@ -1,0 +1,11 @@
+A few things to think about
+
+Question 1) "What does mmap do?"
+
+Question 2) "Why is mmap useful?"
+
+Question 3) "What are MAP_SHARED and MAP_PRIVATE and what do they do?"
+
+Question 4) "What happens when you fork with mmap?"
+
+Question 5) "What does IPC stand for, and how might it be accomplished using mmap?"

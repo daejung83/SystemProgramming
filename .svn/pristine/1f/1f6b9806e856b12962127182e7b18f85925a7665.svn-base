@@ -1,0 +1,86 @@
+/**
+ * Parallel Make
+ * CS 241 - Spring 2016
+ */
+
+#include "parmake.h"
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+
+queue_t* q_target;
+queue_t* q_depen;
+queue_t* q_command;
+
+void parsed_new_target(char* target){
+  
+}
+
+void parsed_new_dependency(char* target, char* dependency){
+
+}
+
+void parsed_new command(char* target, char* command){
+  
+}
+
+// Treat this as main
+int parmake(int argc, char **argv) {
+  // good luck!
+  if(argc < 3){
+		fprintf(stderr, "./path/to/parmake [-f &lt;path/to/makefile&gt;] [-j &lt;positive-integer&gt;] [targets ...]\n");
+    return 1;
+  }
+	char* fvalue = NULL;
+	//char* jvalue = NULL;
+  int num_threads = 0;
+	opterr = 0;
+	int fcount = 0;
+	int jcount = 0;
+	int c;
+  
+	while((c = getopt(argc, argv, "f:j:")) != -1){
+		switch(c){
+			case 'f':
+				fvalue = optarg;
+				fcount++;
+				break;
+			case 'j':
+        for(size_t i = 0; i < strlen(optarg); i++){
+          if(!isdigit(optarg[i])){
+            fprintf(stderr, "%s is not a number\n", optarg);
+            return 1;
+          }
+        }
+				num_threads = atoi(optarg);
+				jcount++;
+				break;
+			default:
+				fprintf(stderr, "./path/to/parmake [-f &lt;path/to/makefile&gt;] [-j &lt;positive-integer&gt;] [targets ...]\n");
+				return 1;
+				break;	
+		}
+	}
+	if(fcount + jcount > 2){
+		fprintf(stderr, "to many arguments\n");
+		return 1;
+	}	
+	//printf("fvalue: %s, jvalue: %s\n", fvalue, jvalue);
+  //int num_threads = atoi(jvalue);
+  printf("argv: %s\n", argv[5]);
+  printf("argc: %d\n", argc);
+  char** targets = malloc(sizeof(void*) * (argc - 5)); 
+  for(int i = 5; i < argc; i++){
+    targets[i-5] = argv[i];
+  }
+  printf("fvalue: %s\n", fvalue);
+  if(num_threads == 0){
+    num_threads = 1;
+  }
+  
+  parser_parse_makefile(fvalue, targets, parsed_new_target, parsed_new_dependency, parsed_new_command); 
+
+  return 0;
+}

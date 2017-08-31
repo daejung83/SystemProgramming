@@ -1,0 +1,11 @@
+
+Hello Student with Netid ddkim9!
+
+We are pleased to tell you that your VM for CS 241 Spring 2016 is ready!
+We will be using this VM in every part of the course, so please become familiar with it. This machine will have all the things you will need to develop on it and you will have full sudo access on it! The hostnane is
+sp16-cs241-070.cs.illinois.edu
+and you can log in with your netid as the user and the password is your AD password. This means you can go into a terminal right now and do
+'ssh ddkim9@sp16-cs241-070.cs.illinois.edu'
+to check it out! Do not worry about this too much, since we will help you set things up in Thursday's Lab.
+
+-- 241 Course Staff :)

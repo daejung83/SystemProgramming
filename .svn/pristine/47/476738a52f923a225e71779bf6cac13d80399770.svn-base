@@ -1,0 +1,16 @@
+//Derek D Kim
+//Jan. 21, 2016
+//CS 241
+//HW0
+
+//C Development
+	//complier flag to generate debug build
+	//-g -O
+
+	//modifying makefile and using make command would not do anything because there were no changes to the program files
+
+	//
+
+	//
+
+	//

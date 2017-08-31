@@ -1,0 +1,84 @@
+/**
+ * Chatroom Lab
+ * CS 241 - Spring 2016
+ */
+// gcc client.c -w -std=gnu99 -pthread -o client
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
+#include <string.h>
+#include <pthread.h>
+#include <signal.h>
+#include "chat_window.h"
+#include "utils.h"
+
+// This is useful
+typedef struct info_t {
+  char *host;
+  char *port;
+  char *username;
+} info_t;
+
+int serverSocket;
+
+struct addrinfo hints, *result;
+pthread_t threads[2];
+void *writeVal, *readVal;
+
+void close_client() {
+  pthread_cancel(threads[0]);
+  pthread_join(threads[0], &writeVal);
+  pthread_cancel(threads[1]);
+  pthread_join(threads[1], &readVal);
+  // BE SURE TO CLOSE THE SOCKET
+}
+
+
+void *run_client(void *information) {
+  info_t* info = information;
+  /*QUESTION 1*/
+  /*QUESTION 2*/
+  /*QUESTION 3*/
+  signal(SIGINT, close_client);
+  serverSocket = socket(AF_INET, SOCK_STREAM, 0);
+
+  /*QUESTION 4*/
+  /*QUESTION 5*/
+  struct addrinfo hints, *result;
+  memset(&hints, 0, sizeof(struct addrinfo));
+  hints.ai_family = AF_INET;
+  hints.ai_socktype = SOCK_STREAM;
+
+  int s = getaddrinfo(info->host, info->port, &hints, &result);
+  if(s != 0){
+    fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(s));
+    exit(1);
+  }
+
+  if(connect(serverSocket, result->ai_addr, result->ai_addrlen) < 0){
+    fprintf(stderr, "server add incorrect %s\n", info->host);
+    exit(1);
+  }
+  
+    //char* buff;
+    //size_t size;
+    //getline(&buff, &size, stdin); 
+    //write(sock_fd, buff, strlen(buff));
+    //char resp[1000];
+    //int len = read(sock_fd, resp, 999);
+    //resp[len] = '\0';
+    //printf("%s\n", resp);
+    pthread_create(&threads[0], NULL, write_to_server, (void*)info->username);
+    pthread_create(&threads[1], NULL, read_from_server, NULL);
+  /*QUESTION 6*/
+    
+  /*QUESTION 7*/
+
+    pthread_join(threads[0], NULL);
+    pthread_join(threads[1], NULL);
+  // Now that a connection has ben established, we can start sending data to the
+  // server.
+  return 0;
+}

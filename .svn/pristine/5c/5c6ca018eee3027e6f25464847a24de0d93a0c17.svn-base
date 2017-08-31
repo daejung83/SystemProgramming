@@ -1,0 +1,52 @@
+#include "camelCaser_tests.h"
+#include "camelCaser.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+ * Testing function for various implementations of camelCaser.
+ *
+ * @param  camelCaser   A pointer to the target camelCaser function.
+ * @return              Correctness of the program (0 for wrong, 1 for correct).
+ */
+int test_camelCaser (char ** (* camelCaser)(const char *))
+{
+    // TODO: Return 1 if the passed in function works properly; 0 if it doesn't.
+   	char* input1 = "Hello . . ? World";
+//"The Heisenbug is an incredible creature. Facenovel servers get their power from its indeterminism. Code smell can be ignored with INCREDIBLE use of air freshener. God objects are the new religion";
+    
+    char** output1 = camelCaser(input1);
+		printf("right after camel\n");
+    char* answer1_1 = "hello";
+		char* answer1_2 = "";
+		char* answer1_3 = "";
+//"'theHeisenbugIsAnIncredibleCreature',\n'facenovelServersGetTheirPowerFromItsIndeterminism',\n'codeSmellCanBeIgnoredWithIncredibleUseOfAirFreshener',\n'godObjectsAreTheNewReligion',\n";
+
+    //char* input1 = "  hello  .?.   world";
+		//char** output1 = camelCaser(input1);
+
+		//printf("output %s\n" , *output1);
+
+		printf("before if\n");	
+		if(*output1[0] == *answer1_1 && *output1[1] == *answer1_2 && *output1[2] == *answer1_3){
+    	printf("test1 was correct \n");
+    }else{
+    	printf("test1 failed \n");
+    	return 0;
+			int i = 0;
+			while(i < 3){//sizeof(output1)/sizeof(char*)){
+				free(output1[i]);
+				i++;
+			}
+    }
+		int i = 0;
+		while(i< 3){ //sizeof(output1)/ sizeof(char*)){
+			free(output1[i]);
+			i++;
+			printf("i %d\n", i);
+		}
+		
+		free(output1);
+
+    return 1;
+}

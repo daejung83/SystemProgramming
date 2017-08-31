@@ -1,0 +1,207 @@
+[
+  {
+    "timestamp": "2016-02-16 04:02:27.514681", 
+    "testcases": [
+      {
+        "description": "Test with program that has no memory leaks.", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\ntotal_usage is incorrect.\ntotal_free is incorrect.\n", 
+        "name": "no_leak", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has memory leaks.", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "leak", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has bad frees.", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\ntotal_usage is incorrect.\ntotal_free is incorrect.\n", 
+        "name": "bad_free", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has a variety of issues.", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\ntotal_usage is incorrect.\ntotal_free is incorrect.\nbad_frees is incorrect.\n", 
+        "name": "full", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has a variety of issues (but under valgrind now).\nNote that you had to get the full_test correct to pass this one as well.", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n==23709== Memcheck, a memory error detector\n==23709== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.\n==23709== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info\n==23709== Command: ././full_test\n==23709== \ntotal_usage is incorrect.\ntotal_free is incorrect.\nbad_frees is incorrect.\n==23709== \n==23709== HEAP SUMMARY:\n==23709==     in use at exit: 60 bytes in 2 blocks\n==23709==   total heap usage: 6 allocs, 4 frees, 544 bytes allocated\n==23709== \n==23709== LEAK SUMMARY:\n==23709==    definitely lost: 0 bytes in 0 blocks\n==23709==    indirectly lost: 0 bytes in 0 blocks\n==23709==      possibly lost: 0 bytes in 0 blocks\n==23709==    still reachable: 60 bytes in 2 blocks\n==23709==         suppressed: 0 bytes in 0 blocks\n==23709== Reachable blocks (those to which a pointer was found) are not shown.\n==23709== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==23709== \n==23709== For counts of detected and suppressed errors, rerun with: -v\n==23709== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)\n", 
+        "name": "memory", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-18 | Revision # 23306)"
+  }, 
+  {
+    "timestamp": "2016-02-16 16:02:01.008122", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "no_leak", 
+        "description": "Test with program that has no memory leaks."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "leak", 
+        "description": "Test with program that has memory leaks."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "bad_free", 
+        "description": "Test with program that has bad frees."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "full", 
+        "description": "Test with program that has a variety of issues."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n==8240== Memcheck, a memory error detector\n==8240== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.\n==8240== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info\n==8240== Command: ././full_test\n==8240== \n==8240== \n==8240== HEAP SUMMARY:\n==8240==     in use at exit: 60 bytes in 2 blocks\n==8240==   total heap usage: 6 allocs, 4 frees, 544 bytes allocated\n==8240== \n==8240== LEAK SUMMARY:\n==8240==    definitely lost: 0 bytes in 0 blocks\n==8240==    indirectly lost: 0 bytes in 0 blocks\n==8240==      possibly lost: 0 bytes in 0 blocks\n==8240==    still reachable: 60 bytes in 2 blocks\n==8240==         suppressed: 0 bytes in 0 blocks\n==8240== Reachable blocks (those to which a pointer was found) are not shown.\n==8240== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==8240== \n==8240== For counts of detected and suppressed errors, rerun with: -v\n==8240== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)\n", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "memory", 
+        "description": "Test with program that has a variety of issues (but under valgrind now).\nNote that you had to get the full_test correct to pass this one as well."
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-18 | Revision # 23306)"
+  }, 
+  {
+    "timestamp": "2016-02-16 17:22:13.079822", 
+    "testcases": [
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Test with program that has no memory leaks.", 
+        "name": "no_leak", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Test with program that has memory leaks.", 
+        "name": "leak", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Test with program that has bad frees.", 
+        "name": "bad_free", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Test with program that has a variety of issues.", 
+        "name": "full", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Test with program that has a variety of issues (but under valgrind now).\nNote that you had to get the full_test correct to pass this one as well.", 
+        "name": "memory", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n==26918== Memcheck, a memory error detector\n==26918== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.\n==26918== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info\n==26918== Command: ././full_test\n==26918== \n==26918== \n==26918== HEAP SUMMARY:\n==26918==     in use at exit: 60 bytes in 2 blocks\n==26918==   total heap usage: 6 allocs, 4 frees, 544 bytes allocated\n==26918== \n==26918== LEAK SUMMARY:\n==26918==    definitely lost: 0 bytes in 0 blocks\n==26918==    indirectly lost: 0 bytes in 0 blocks\n==26918==      possibly lost: 0 bytes in 0 blocks\n==26918==    still reachable: 60 bytes in 2 blocks\n==26918==         suppressed: 0 bytes in 0 blocks\n==26918== Reachable blocks (those to which a pointer was found) are not shown.\n==26918== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==26918== \n==26918== For counts of detected and suppressed errors, rerun with: -v\n==26918== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)\n"
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-18 | Revision # 23763)"
+  }, 
+  {
+    "timestamp": "2016-02-17 04:02:06.092962", 
+    "testcases": [
+      {
+        "description": "Test with program that has no memory leaks.", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "no_leak", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has memory leaks.", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "leak", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has bad frees.", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "bad_free", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has a variety of issues.", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "full", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test with program that has a variety of issues (but under valgrind now).\nNote that you had to get the full_test correct to pass this one as well.", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n==26308== Memcheck, a memory error detector\n==26308== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.\n==26308== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info\n==26308== Command: ././full_test\n==26308== \n==26308== \n==26308== HEAP SUMMARY:\n==26308==     in use at exit: 60 bytes in 2 blocks\n==26308==   total heap usage: 6 allocs, 4 frees, 544 bytes allocated\n==26308== \n==26308== LEAK SUMMARY:\n==26308==    definitely lost: 0 bytes in 0 blocks\n==26308==    indirectly lost: 0 bytes in 0 blocks\n==26308==      possibly lost: 0 bytes in 0 blocks\n==26308==    still reachable: 60 bytes in 2 blocks\n==26308==         suppressed: 0 bytes in 0 blocks\n==26308== Reachable blocks (those to which a pointer was found) are not shown.\n==26308== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==26308== \n==26308== For counts of detected and suppressed errors, rerun with: -v\n==26308== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)\n", 
+        "name": "memory", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-18 | Revision # 24371)"
+  }, 
+  {
+    "timestamp": "2016-02-18 00:02:56.637072", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "no_leak", 
+        "description": "Test with program that has no memory leaks."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "leak", 
+        "description": "Test with program that has memory leaks."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "bad_free", 
+        "description": "Test with program that has bad frees."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "full", 
+        "description": "Test with program that has a variety of issues."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n==27480== Memcheck, a memory error detector\n==27480== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.\n==27480== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info\n==27480== Command: ././full_test\n==27480== \n==27480== \n==27480== HEAP SUMMARY:\n==27480==     in use at exit: 60 bytes in 2 blocks\n==27480==   total heap usage: 6 allocs, 4 frees, 544 bytes allocated\n==27480== \n==27480== LEAK SUMMARY:\n==27480==    definitely lost: 0 bytes in 0 blocks\n==27480==    indirectly lost: 0 bytes in 0 blocks\n==27480==      possibly lost: 0 bytes in 0 blocks\n==27480==    still reachable: 60 bytes in 2 blocks\n==27480==         suppressed: 0 bytes in 0 blocks\n==27480== Reachable blocks (those to which a pointer was found) are not shown.\n==27480== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==27480== \n==27480== For counts of detected and suppressed errors, rerun with: -v\n==27480== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)\n", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "memory", 
+        "description": "Test with program that has a variety of issues (but under valgrind now).\nNote that you had to get the full_test correct to pass this one as well."
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-18 | Revision # 25322)"
+  }
+]

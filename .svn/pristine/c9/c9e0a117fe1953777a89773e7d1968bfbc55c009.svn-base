@@ -1,0 +1,45 @@
+#include "camelCaser.h"
+
+#include <stddef.h>
+
+char **camel_caser(const char *input_str) {
+
+	//ispunct() isspace() isalpha()
+
+	int (*p[3])(int c);
+	p[0] = ispunct;
+	p[1] = isspace;
+	p[2] = isalpha;
+
+	//read information to get size of malloc
+	//1(for first ") + (nSpace * 0) + (nPunct * 3) + (nAlpah * 1) + 1(for NULL ptr)
+	int total_molloc_space = 1 + sizeof(char*);
+	//starting at 2 for first and the NULL ptr at the end"
+	while(input_str){
+		int result = 0;
+		int key = 0;
+		for(int i = 0; i < 4; i++){
+			if(i == 4){
+				//simple check for debugging
+				printf("none of the functions worked\n");
+				break;
+			}
+			result = p[i](input_str);
+			if(result == 1){
+				//leave for loop if is-whatever was found
+				key = i;
+				break;
+			}
+		}
+		if(key == 0){
+			total_molloc_space += 3;
+		}else if(key == 2){
+			total_molloc_space += 2
+		}
+	}
+	printf("total_molloc_space: %d\n", total_molloc_space);
+
+	//read again to define what needs to be written
+
+    return NULL;
+}

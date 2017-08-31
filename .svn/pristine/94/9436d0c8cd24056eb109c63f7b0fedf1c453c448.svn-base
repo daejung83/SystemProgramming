@@ -1,0 +1,138 @@
+#define _GNU_SOURCE
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "format.h"
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <string.h>
+#include <ctype.h>
+#define PATH "/usr/bin/"
+
+int main(int argc, char *argv[])
+{
+  //char** evn = __environ;
+  int status = 0;
+
+  if(argc == 1){
+    //might need to move env ptr to print
+    system("env");
+    return 0;
+  }else if(argc == 2){
+    print_env_usage();
+    return 0;
+  }
+  pid_t pid = fork();
+
+  //split input data
+  char* var_st = (char*)malloc(strlen(argv[1]+1));
+  strcpy(var_st, argv[1]);
+  printf("var_st: %s\n", var_st);
+  
+  size_t tok_used = 0;
+  size_t tok_cap = 1;
+  char** tok_array = calloc(1, sizeof(char*));
+  char* tok = NULL;
+  char* delim = ",";
+  char* str = var_st;
+  tok = strsep(&str, delim);
+  int track = 0;
+  while(tok != NULL){
+    if(tok_used == tok_cap){
+      tok_cap = tok_cap *2;
+      tok_array = (char**)realloc(tok_array, tok_cap*sizeof(char*));
+    }
+    tok_array[tok_used] = (char*)malloc(strlen(tok)+1);
+    strcpy(tok_array[tok_used], tok);
+    tok_used++;
+  
+    tok = strsep(&str, delim);
+    track++;
+  }
+
+  for(size_t i = 0; i < tok_used; i++){
+    printf("array: %zu, %s\n", i , tok_array[i]);
+  }
+
+  for(int i = 0; i < track; i++){
+    char word[50];// = *tok_array[track];
+    strcpy(word,tok_array[track]);
+    int pos = 0;
+    int equ_loc = 0;
+    int pos_count = 0;
+
+      printf("word: %s\n", tok_array[track]); 
+    int j = 0;
+    for(int
+    //while(word[j] != 0){
+      if(word[j] == '=')
+        equ_loc = pos;
+      else if(word[j] == '%')
+        pos_count++;
+      pos++;
+      j++;
+    }
+    j = 0;
+      printf("test %s %d %d\n", tok_array[0], equ_loc, pos_count);
+    if(equ_loc != 0){
+      if(pos_count == 0){
+        char* command_t = tok_array[i];
+        char* first_com = (char*)malloc(strlen(tok_array[i]));
+        char* sec_com = (char*)malloc(strlen(tok_array[i]));
+        strcpy(first_com, "");
+        strcpy(sec_com, "");
+        while(*command_t != '='){
+          //char* a = tolower(*command);
+          strcat(first_com, &command_t[0]);
+          command_t++;
+        }
+        printf("first_com %s\n", first_com);
+        command_t++;
+        while(command_t != NULL){
+          strcat(sec_com, command_t);
+          command_t++;
+        }
+      }
+    }else if(pos > 1){
+
+    }
+  }
+  
+  char* command = (char*)malloc(255);
+  strcpy(command, PATH);
+  strcat(command, argv[2]);
+
+  if(pid == 0){
+    //child
+    //run code
+    printf("command: %s\n", command);
+    if(execvp(command, argv+2))
+      exit(0);
+    else
+      exit(3);
+  }else if(pid > 0){
+    //parent
+    waitpid(pid, &status, 0);
+    //check if waitpid return correct
+    if(WIFEXITED(status)){
+      //code ran was successful
+    }else{
+      print_exec_failed();
+    }
+    
+  }else{
+    //fork failed
+    print_fork_failed();
+  }
+  
+  for(size_t i = 0; i < tok_used; i++){
+    if(tok_array[i] != NULL){
+      free(tok_array[i]);
+    }
+  }
+  free(tok_array);
+  free(var_st);
+  free(command);
+
+  return 0;
+}

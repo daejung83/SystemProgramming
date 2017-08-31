@@ -1,0 +1,105 @@
+#include "camelCaser_tests.h"
+#include "camelCaser.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+ * Testing function for various implementations of camelCaser.
+ *
+ * @param  camelCaser   A pointer to the target camelCaser function.
+ * @return              Correctness of the program (0 for wrong, 1 for correct).
+ */
+int test_camelCaser (char ** (* camelCaser)(const char *))
+{
+    // TODO: Return 1 if the passed in function works properly; 0 if it doesn't.
+   	
+		//test1
+		char* input1 = "Hello . . ? World";
+    char** output1 = camelCaser(input1);
+		//printf("right after camel\n");
+    char* answer1_1 = "hello";
+		char* answer1_2 = "";
+		char* answer1_3 = "";
+
+		//printf("before if\n");	
+		if(*output1[0] == *answer1_1 && *output1[1] == *answer1_2 && *output1[2] == *answer1_3){
+    	printf("test1 was correct \n");
+    }else{
+    	printf("test1 failed \n");
+			int i = 0;
+			while(i < 3){//sizeof(output1)/sizeof(char*)){
+				free(output1[i]);
+				i++;
+			}
+			free(output1);
+			return 0;
+    }
+		int i = 0;
+		while(i< 3){ //sizeof(output1)/ sizeof(char*)){
+			free(output1[i]);
+			i++;
+			//printf("i %d\n", i);
+		}	
+		free(output1);
+	
+		//test2
+		char* input2 = "Hello";
+		char** output2 = camelCaser(input2);
+		char* answer2_1 = "";
+		
+		if(*output2[0] == *answer2_1){
+			printf("test2 was correct \n");
+		}else{
+			printf("test2 failed \n");
+			int i = 0;
+			free(output2[0]);
+			free(output2[1]);
+			free(output2);
+			return 0;
+		}
+
+		//test3
+		char* input3 = ".?.";
+		char** output3 = camelCaser(input3);
+		char* answer3_1 = "";
+		char* answer3_2 = "";
+		char* answer3_3 = "";
+
+		if(*output3[0] == *answer3_1 && *output3[1] == *answer3_2 && *output3[2] == *answer3_3){
+			printf("test3 was correct \n");
+		}else{
+			printf("test3 was incorrect \n");
+			int i = 0;
+			while(i < 3){
+				free(output3[i]);
+			}
+			free(output3);
+			return 0;
+		}
+
+		//test4
+		char* input4 = "hello .?, world,";
+		char** output4 = camelCaser(input4);
+		char* answer4_1 = "hello";
+		char* answer4_2 = "";
+		char* answer4_3 = "";
+		char* answer4_4 = "world";
+
+		if(*output4[0] == *answer4_1 && *output4[1] == *answer4_2 && *output4[2] == *answer4_3 && *output4[3] == *answer4_4){
+			printf("test4 was correct \n");
+		}else{
+			printf("test4 was incorrect \n");
+			int i = 0;
+			while(i < 4){
+				free(output3[i]);
+			}
+			free(output4);
+			return 0;
+		}
+
+
+    return 1;
+}
+
+
+

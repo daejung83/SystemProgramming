@@ -1,0 +1,44 @@
+//Derek D Kim
+//Jan. 21, 2016
+//CS 241
+//HW0
+
+//Chapter 5
+	//Reading characters, Trouble with gets
+		//Inorder to get stdin to stdout we could use putchar() function
+
+		//gets() function would have problems because it could have overflow
+
+	//Introducing sscanf and friends
+		#define _GNU_SOURCE
+		#include <stdio.h>
+		#include <stdlib.h>
+		int main(){
+			char * data = "Hello 5 World";
+			//do i need to use strcpy?
+			char buffer1[20];
+			char buffer2[20];
+			int num = 99;
+
+			int result = sscanf(data, "%s, %d, %s", buffer1, &num, buffer2);
+
+			printf("Result: %d %s %d : %s\n", result, buffer1, num, buffer2);
+
+
+	//getline is useful
+		//you would need to #define _GNU_SOURCE
+
+			char * buffer = NULL;
+			size_t capacity = 0;
+			ssize_t getline_result = getline(&buffer, &capacity, stdin);
+
+			if(result > 0 && buffer[getline_result -1] == '\n'){
+				buffer[getline_result-1] = 0;
+			}
+
+			printf("%d : %s\n", getline_result, buffer);
+
+			free(buffer);
+
+			return 0;
+		}

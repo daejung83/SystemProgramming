@@ -1,0 +1,8 @@
+-- Grading dumb.c --
+dumb.c exists
+dumb.c compiles
+dumb.c segfaults! (+1)
+hw0.pdf has been submitted!
+-- Total Score --
+dumb.c		:	1.0
+hw0.pdf		:	1.0

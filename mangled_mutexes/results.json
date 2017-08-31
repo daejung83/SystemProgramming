@@ -1,0 +1,278 @@
+[
+  {
+    "timestamp": "2016-02-23 00:37:28.341087", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nTrying to compile your code...\nSuccessfully compiled your code..\n\nTrying to compile your code...\nSuccessfully compiled your code..\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 3.0, 
+        "name": "Is 1 a prime number?", 
+        "description": "Checks to see that you know that 1 is not a prime number."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\n\nTrying to compile your code...\nSuccessfully compiled your code..\n\nTrying to compile your code...\nSuccessfully compiled your code..\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 3.0, 
+        "name": "Is 5 a prime number?", 
+        "description": "Checks to see that you know that 5 is a prime number."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nThere are 200 primes between 1 and 541 inclusive\n\nTrying to compile your code...\nSuccessfully compiled your code..\nThere are 200 primes between 1 and 541 inclusive\n\nTrying to compile your code...\nSuccessfully compiled your code..\nThere are 200 primes between 1 and 541 inclusive\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 3.0, 
+        "name": "How many primes between 1 and 541? (1 thread)", 
+        "description": "Finds primes between 1 and 541 with 1 thread."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 3.0, 
+        "ptsPossible": 3.0, 
+        "name": "How many primes between 1 and 541? (4 threads)", 
+        "description": "Finds primes between 1 and 541 with 4 threads."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 3.0, 
+        "ptsPossible": 3.0, 
+        "name": "How many primes between 100 and 541? (4 threads)", 
+        "description": "Finds primes between 100 and 541 with 4 threads"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 3.0, 
+        "ptsPossible": 3.0, 
+        "name": "How many primes between 2 and 5? (10 threads)", 
+        "description": "Finds primes between 2 and 5 with 10 threads"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 3.0, 
+        "ptsPossible": 3.0, 
+        "name": "How many primes between 5 and 97? (7 threads)", 
+        "description": "Finds primes between 5 and 97 with 7 threads"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 10.0, 
+        "ptsPossible": 10.0, 
+        "name": "How many primes between 1 and 15485863? (4 threads)", 
+        "description": "Finds primes between 1 and 15485863 with 4 threads, and time limit = 14.5s (compared with TA soln)."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 10.0, 
+        "ptsPossible": 10.0, 
+        "name": "Checking that there is no race conditions", 
+        "description": "Determines if there is a race condiition"
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-25 | Revision # 30442)"
+  }, 
+  {
+    "timestamp": "2016-02-23 23:01:55.208182", 
+    "testcases": [
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 0.0, 
+        "description": "Checks to see that you know that 1 is not a prime number.", 
+        "name": "Is 1 a prime number?", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "description": "Checks to see that you know that 5 is a prime number.", 
+        "name": "Is 5 a prime number?", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "description": "Finds primes between 1 and 541 with 1 thread.", 
+        "name": "How many primes between 1 and 541? (1 thread)", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "description": "Finds primes between 1 and 541 with 4 threads.", 
+        "name": "How many primes between 1 and 541? (4 threads)", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "description": "Finds primes between 100 and 541 with 4 threads", 
+        "name": "How many primes between 100 and 541? (4 threads)", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "description": "Finds primes between 2 and 5 with 10 threads", 
+        "name": "How many primes between 2 and 5? (10 threads)", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "description": "Finds primes between 5 and 97 with 7 threads", 
+        "name": "How many primes between 5 and 97? (7 threads)", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 20.0, 
+        "ptsEarned": 20.0, 
+        "description": "Finds primes between 1 and 15485863 with 4 threads, and time limit = 14.5s (compared with TA soln).", 
+        "name": "How many primes between 1 and 15485863? (4 threads)", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 10.0, 
+        "ptsEarned": 10.0, 
+        "description": "Determines if there is a race condiition", 
+        "name": "Checking that there is no race conditions", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-25 | Revision # 31346)"
+  }, 
+  {
+    "timestamp": "2016-02-24 14:09:30.654745", 
+    "testcases": [
+      {
+        "description": "Checks to see that you know that 1 is not a prime number.", 
+        "ptsEarned": 3.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Is 1 a prime number?", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Checks to see that you know that 5 is a prime number.", 
+        "ptsEarned": 3.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Is 5 a prime number?", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Finds primes between 1 and 541 with 1 thread.", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "How many primes between 1 and 541? (1 thread)", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Finds primes between 1 and 541 with 4 threads.", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "How many primes between 1 and 541? (4 threads)", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Finds primes between 100 and 541 with 4 threads", 
+        "ptsEarned": 3.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "How many primes between 100 and 541? (4 threads)", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Finds primes between 2 and 5 with 10 threads", 
+        "ptsEarned": 3.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "How many primes between 2 and 5? (10 threads)", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Finds primes between 5 and 97 with 7 threads", 
+        "ptsEarned": 3.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "How many primes between 5 and 97? (7 threads)", 
+        "ptsPossible": 3.0
+      }, 
+      {
+        "description": "Finds primes between 1 and 15485863 with 4 threads, and time limit = 14.5s (compared with TA soln).", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "How many primes between 1 and 15485863? (4 threads)", 
+        "ptsPossible": 20.0
+      }, 
+      {
+        "description": "Determines if there is a race condiition", 
+        "ptsEarned": 10.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Checking that there is no race conditions", 
+        "ptsPossible": 10.0
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-25 | Revision # 31816)"
+  }, 
+  {
+    "timestamp": "2016-02-25 00:48:07.889275", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "name": "Is 1 a prime number?", 
+        "description": "Checks to see that you know that 1 is not a prime number."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "name": "Is 5 a prime number?", 
+        "description": "Checks to see that you know that 5 is a prime number."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "name": "How many primes between 1 and 541? (1 thread)", 
+        "description": "Finds primes between 1 and 541 with 1 thread."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "name": "How many primes between 1 and 541? (4 threads)", 
+        "description": "Finds primes between 1 and 541 with 4 threads."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "name": "How many primes between 100 and 541? (4 threads)", 
+        "description": "Finds primes between 100 and 541 with 4 threads"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "name": "How many primes between 2 and 5? (10 threads)", 
+        "description": "Finds primes between 2 and 5 with 10 threads"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..\nTrying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 3.0, 
+        "ptsEarned": 3.0, 
+        "name": "How many primes between 5 and 97? (7 threads)", 
+        "description": "Finds primes between 5 and 97 with 7 threads"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 20.0, 
+        "ptsEarned": 20.0, 
+        "name": "How many primes between 1 and 15485863? (4 threads)", 
+        "description": "Finds primes between 1 and 15485863 with 4 threads, and time limit = 14.5s (compared with TA soln)."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 10.0, 
+        "ptsEarned": 10.0, 
+        "name": "Checking that there is no race conditions", 
+        "description": "Determines if there is a race condiition"
+      }
+    ], 
+    "revision": "(Pull Time: 2016-02-25 | Revision # 32694)"
+  }
+]

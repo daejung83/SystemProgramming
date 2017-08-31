@@ -1,0 +1,310 @@
+[
+  {
+    "timestamp": "2016-04-24 05:00:00.133296", 
+    "testcases": [
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 0.0, 
+        "log": "Output did not match solution output", 
+        "name": "test_fcfs", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 0.0, 
+        "log": "Output did not match solution output", 
+        "name": "test_sjf", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 0.0, 
+        "log": "Output did not match solution output", 
+        "name": "test_psjf", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 0.0, 
+        "log": "Output did not match solution output", 
+        "name": "test_pri", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 0.0, 
+        "log": "Output did not match solution output", 
+        "name": "test_rr2", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "79574", 
+    "checksum": "4385905052d78c9f06c0681655eda4bd5f360bff  libscheduler/libscheduler.h\nd3629d342b99ba6d478d1f650bd03fe2a153dc43  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h"
+  }, 
+  {
+    "timestamp": "2016-04-24 12:41:40.725096", 
+    "testcases": [
+      {
+        "log": "Output did not match solution output", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_fcfs", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Output did not match solution output", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_sjf", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Output did not match solution output", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_psjf", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Output did not match solution output", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_pri", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Output did not match solution output", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_rr2", 
+        "description": "Compare output of solutions"
+      }
+    ], 
+    "checksum": "4385905052d78c9f06c0681655eda4bd5f360bff  libscheduler/libscheduler.h\nd3629d342b99ba6d478d1f650bd03fe2a153dc43  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h", 
+    "revision": "79590"
+  }, 
+  {
+    "timestamp": "2016-04-25 05:00:01.243320", 
+    "testcases": [
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_fcfs", 
+        "log": "Output did not match solution output"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_sjf", 
+        "log": "Output did not match solution output"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_psjf", 
+        "log": "Output did not match solution output"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_pri", 
+        "log": "Output did not match solution output"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_rr2", 
+        "log": "Output did not match solution output"
+      }
+    ], 
+    "revision": "80338", 
+    "checksum": "4385905052d78c9f06c0681655eda4bd5f360bff  libscheduler/libscheduler.h\nd3629d342b99ba6d478d1f650bd03fe2a153dc43  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h"
+  }, 
+  {
+    "timestamp": "2016-04-26 05:00:00.418022", 
+    "testcases": [
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_fcfs", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_sjf", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_psjf", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_pri", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_rr2", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "checksum": "648c576a8c9b4f5177c17404d8659139efaad1d2  libscheduler/libscheduler.h\nd3febb864ac9e221af5f5987cf6f291ef5ad36a9  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h", 
+    "revision": "82780"
+  }, 
+  {
+    "timestamp": "2016-04-26 19:00:00.414433", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_fcfs", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_psjf", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_pri", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_rr2", 
+        "description": "Compare output of solutions"
+      }
+    ], 
+    "revision": "82863", 
+    "checksum": "648c576a8c9b4f5177c17404d8659139efaad1d2  libscheduler/libscheduler.h\nd3febb864ac9e221af5f5987cf6f291ef5ad36a9  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h"
+  }, 
+  {
+    "timestamp": "2016-04-27 05:00:01.282860", 
+    "testcases": [
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_fcfs", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_psjf", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_pri", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Compare output of solutions", 
+        "name": "test_rr2", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }
+    ], 
+    "checksum": "648c576a8c9b4f5177c17404d8659139efaad1d2  libscheduler/libscheduler.h\nd3febb864ac9e221af5f5987cf6f291ef5ad36a9  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h", 
+    "revision": "83263"
+  }, 
+  {
+    "timestamp": "2016-04-28 16:57:39.636096", 
+    "testcases": [
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_fcfs", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_psjf", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_pri", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Compare output of solutions", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "test_rr2", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "84297", 
+    "checksum": "648c576a8c9b4f5177c17404d8659139efaad1d2  libscheduler/libscheduler.h\nd3febb864ac9e221af5f5987cf6f291ef5ad36a9  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h"
+  }, 
+  {
+    "timestamp": "2016-04-28 17:59:45.201744", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "test_fcfs", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "test_psjf", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "test_pri", 
+        "description": "Compare output of solutions"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "test_rr2", 
+        "description": "Compare output of solutions"
+      }
+    ], 
+    "checksum": "648c576a8c9b4f5177c17404d8659139efaad1d2  libscheduler/libscheduler.h\nd3febb864ac9e221af5f5987cf6f291ef5ad36a9  libscheduler/libscheduler.c\ndba04569b1f16f4d09c7723e68f668728dfe855d  libpriqueue/libpriqueue.c\n5342cec8e1d577a3b82a6ae1c31f2e5cc0fd6e94  libpriqueue/libpriqueue.h", 
+    "revision": "84297"
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "timestamp": "2016-04-17 22:00:02.182833", 
+    "testcases": [
+      {
+        "description": "Test splitter is used correctly to feed data to mappers", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nData was not split evenly among mappers", 
+        "name": "splitter", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test that mr1 print the correct output on a small input with multiple mappers", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers, with mappers of 1", 
+        "name": "small_input", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test that tests mr1 on a large input", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTimeout", 
+        "name": "large_input", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test one reducer is used correctly", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output", 
+        "name": "reducer_test", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test that tests that multiple mappers are used", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers with mappers of 1", 
+        "name": "test_mapper", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test one reducer is used correctly", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output", 
+        "name": "performance_test", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "checksum": "ed9e5cbcd91a5ddf5da3553a70d3d6809e3cbbc3  mr1.c\nd013c9a3756c3ee9b69fbe294e26e7f5fdf60302  core/common.c\n64e31b82898787e53899b9cac76f6deb32fdafa5  core/common.h", 
+    "revision": "73809"
+  }, 
+  {
+    "timestamp": "2016-04-18 08:00:02.194197", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nData was not split evenly among mappers", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "splitter", 
+        "description": "Test splitter is used correctly to feed data to mappers"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers, with mappers of 1", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "small_input", 
+        "description": "Test that mr1 print the correct output on a small input with multiple mappers"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTimeout", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "large_input", 
+        "description": "Test that tests mr1 on a large input"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "reducer_test", 
+        "description": "Test one reducer is used correctly"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers with mappers of 1", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "test_mapper", 
+        "description": "Test that tests that multiple mappers are used"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "performance_test", 
+        "description": "Test one reducer is used correctly"
+      }
+    ], 
+    "revision": "74308", 
+    "checksum": "ed9e5cbcd91a5ddf5da3553a70d3d6809e3cbbc3  mr1.c\nd013c9a3756c3ee9b69fbe294e26e7f5fdf60302  core/common.c\n64e31b82898787e53899b9cac76f6deb32fdafa5  core/common.h"
+  }, 
+  {
+    "timestamp": "2016-04-18 16:00:00.342709", 
+    "testcases": [
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Test splitter is used correctly to feed data to mappers", 
+        "name": "splitter", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nData was not split evenly among mappers"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Test that mr1 print the correct output on a small input with multiple mappers", 
+        "name": "small_input", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers, with mappers of 1"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Test that tests mr1 on a large input", 
+        "name": "large_input", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTimeout"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Test one reducer is used correctly", 
+        "name": "reducer_test", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Test that tests that multiple mappers are used", 
+        "name": "test_mapper", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers with mappers of 1"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Test one reducer is used correctly", 
+        "name": "performance_test", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output"
+      }
+    ], 
+    "checksum": "68aa354c9bdf9350f0b03d01f3a46a45a5c2e465  mr1.c\n6b4a644452ac192317eb1f467e67ac57097a7e35  core/common.c\na29561afcfdb3b51326589343968fb7dfb25cdb0  core/common.h", 
+    "revision": "74656"
+  }, 
+  {
+    "timestamp": "2016-04-18 20:00:01.718179", 
+    "testcases": [
+      {
+        "description": "Test splitter is used correctly to feed data to mappers", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nData was not split evenly among mappers", 
+        "name": "splitter", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test that mr1 print the correct output on a small input with multiple mappers", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers, with mappers of 1", 
+        "name": "small_input", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test that tests mr1 on a large input", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTimeout", 
+        "name": "large_input", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test one reducer is used correctly", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output", 
+        "name": "reducer_test", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test that tests that multiple mappers are used", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect number of mappers with mappers of 1", 
+        "name": "test_mapper", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Test one reducer is used correctly", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output", 
+        "name": "performance_test", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "75357", 
+    "checksum": "68aa354c9bdf9350f0b03d01f3a46a45a5c2e465  mr1.c\n6b4a644452ac192317eb1f467e67ac57097a7e35  core/common.c\na29561afcfdb3b51326589343968fb7dfb25cdb0  core/common.h"
+  }, 
+  {
+    "timestamp": "2016-04-19 00:00:01.755208", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "splitter", 
+        "description": "Test splitter is used correctly to feed data to mappers"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "small_input", 
+        "description": "Test that mr1 print the correct output on a small input with multiple mappers"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "large_input", 
+        "description": "Test that tests mr1 on a large input"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nTest passed", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "reducer_test", 
+        "description": "Test one reducer is used correctly"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "test_mapper", 
+        "description": "Test that tests that multiple mappers are used"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nIncorrect output", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "name": "performance_test", 
+        "description": "Test one reducer is used correctly"
+      }
+    ], 
+    "checksum": "312682cb054c5c11cde4d505e86b995aede4b451  mr1.c\n6b4a644452ac192317eb1f467e67ac57097a7e35  core/common.c\na29561afcfdb3b51326589343968fb7dfb25cdb0  core/common.h", 
+    "revision": "76260"
+  }
+]

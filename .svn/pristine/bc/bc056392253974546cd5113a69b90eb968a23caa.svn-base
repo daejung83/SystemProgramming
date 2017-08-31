@@ -1,0 +1,247 @@
+[
+  {
+    "timestamp": "2016-04-20 01:33:36.885217", 
+    "testcases": [
+      {
+        "description": "Testing student's client with autograder's server", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Run Autograder Server Student Client", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing student's server with autograder's client", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nClient didn't receive message from student server.", 
+        "name": "Run Autograder Client Student Server", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing 8 student's client with autograder's server", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Run Autograder Server with multiple Student Clients", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing that you can't connect more than 8 clients to a server", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nUnable to write to client stdin", 
+        "name": "Testing that you can't have 9 clients", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing student's server can't connect to port below 1024", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Testing that you can't connect to ports below 1024", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing that chatroom can't connect to a port that doesn't is not the server's port", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Testing that you cannot connect to incorrect port", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "checksum": "c2ef6905477a64f9f80d237e9f401050626cfd1f  client.c\n021395cf025e617b573da948e22bacdb618450a7  server.c", 
+    "revision": "76932"
+  }, 
+  {
+    "timestamp": "2016-04-20 13:16:43.788847", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "Run Autograder Server Student Client", 
+        "description": "Testing student's client with autograder's server"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "Run Autograder Client Student Server", 
+        "description": "Testing student's server with autograder's client"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "Run Autograder Server with multiple Student Clients", 
+        "description": "Testing 8 student's client with autograder's server"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nExtra client was able to write to other clents ", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 1.0, 
+        "name": "Testing that you can't have 9 clients", 
+        "description": "Testing that you can't connect more than 8 clients to a server"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "Testing that you can't connect to ports below 1024", 
+        "description": "Testing student's server can't connect to port below 1024"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "Testing that you cannot connect to incorrect port", 
+        "description": "Testing that chatroom can't connect to a port that doesn't is not the server's port"
+      }
+    ], 
+    "revision": "77142", 
+    "checksum": "8ce147601dcb3ad2cb17dc38799cb74f80a80db3  client.c\n586be46ef8ed792317db4cf9731d669adc593fc1  server.c"
+  }, 
+  {
+    "timestamp": "2016-04-20 18:16:35.031338", 
+    "testcases": [
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Testing student's client with autograder's server", 
+        "name": "Run Autograder Server Student Client", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Testing student's server with autograder's client", 
+        "name": "Run Autograder Client Student Server", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Testing 8 student's client with autograder's server", 
+        "name": "Run Autograder Server with multiple Student Clients", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Testing that you can't connect more than 8 clients to a server", 
+        "name": "Testing that you can't have 9 clients", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nExtra client was able to write to other clents "
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Testing student's server can't connect to port below 1024", 
+        "name": "Testing that you can't connect to ports below 1024", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Testing that chatroom can't connect to a port that doesn't is not the server's port", 
+        "name": "Testing that you cannot connect to incorrect port", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }
+    ], 
+    "checksum": "8ce147601dcb3ad2cb17dc38799cb74f80a80db3  client.c\n586be46ef8ed792317db4cf9731d669adc593fc1  server.c", 
+    "revision": "77698"
+  }, 
+  {
+    "timestamp": "2016-04-20 22:29:44.900002", 
+    "testcases": [
+      {
+        "description": "Testing student's client with autograder's server", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Run Autograder Server Student Client", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing student's server with autograder's client", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Run Autograder Client Student Server", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing 8 student's client with autograder's server", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Run Autograder Server with multiple Student Clients", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing that you can't connect more than 8 clients to a server", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Testing that you can't have 9 clients", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing student's server can't connect to port below 1024", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Testing that you can't connect to ports below 1024", 
+        "ptsPossible": 1.0
+      }, 
+      {
+        "description": "Testing that chatroom can't connect to a port that doesn't is not the server's port", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Testing that you cannot connect to incorrect port", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "78431", 
+    "checksum": "c2ef6905477a64f9f80d237e9f401050626cfd1f  client.c\n03d81c1cc449e885b813b727bec1ec24a52df301  server.c"
+  }, 
+  {
+    "timestamp": "2016-04-21 00:05:18.018996", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "Run Autograder Server Student Client", 
+        "description": "Testing student's client with autograder's server"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "Run Autograder Client Student Server", 
+        "description": "Testing student's server with autograder's client"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "Run Autograder Server with multiple Student Clients", 
+        "description": "Testing 8 student's client with autograder's server"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "Testing that you can't have 9 clients", 
+        "description": "Testing that you can't connect more than 8 clients to a server"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "Testing that you can't connect to ports below 1024", 
+        "description": "Testing student's server can't connect to port below 1024"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "Testing that you cannot connect to incorrect port", 
+        "description": "Testing that chatroom can't connect to a port that doesn't is not the server's port"
+      }
+    ], 
+    "checksum": "c2ef6905477a64f9f80d237e9f401050626cfd1f  client.c\n03d81c1cc449e885b813b727bec1ec24a52df301  server.c", 
+    "revision": "78823"
+  }
+]

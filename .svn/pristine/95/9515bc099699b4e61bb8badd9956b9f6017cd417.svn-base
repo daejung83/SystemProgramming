@@ -1,0 +1,296 @@
+[
+  {
+    "timestamp": "2016-05-01 20:30:00.385858", 
+    "testcases": [
+      {
+        "ptsPossible": 2.0, 
+        "ptsEarned": 0.0, 
+        "description": "Testing server with one wearable ...", 
+        "name": "One Wearable", 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n"
+      }, 
+      {
+        "ptsPossible": 2.0, 
+        "ptsEarned": 0.0, 
+        "description": "Testing server with two wearables", 
+        "name": "Two Wearable", 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n"
+      }, 
+      {
+        "ptsPossible": 2.0, 
+        "ptsEarned": 0.0, 
+        "description": "Testing Server for synchronization...", 
+        "name": "Synchronized", 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n"
+      }, 
+      {
+        "ptsPossible": 4.0, 
+        "ptsEarned": 0.0, 
+        "description": "Stress Testing Server...", 
+        "name": "Stress", 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n"
+      }, 
+      {
+        "ptsPossible": 4.0, 
+        "ptsEarned": 0.0, 
+        "description": "Now I'm just messing with you :)", 
+        "name": "Tricky", 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 0.0, 
+        "description": "Checking for memory leaks...", 
+        "name": "Memory Leak", 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n"
+      }
+    ], 
+    "revision": "84816", 
+    "checksum": "9beef800a1926b820a9c7003009333f0c312895d  wearable_server.c"
+  }, 
+  {
+    "timestamp": "2016-05-02 04:00:00.474398", 
+    "testcases": [
+      {
+        "description": "Testing server with one wearable ...", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n", 
+        "name": "One Wearable", 
+        "ptsPossible": 2.0
+      }, 
+      {
+        "description": "Testing server with two wearables", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n", 
+        "name": "Two Wearable", 
+        "ptsPossible": 2.0
+      }, 
+      {
+        "description": "Testing Server for synchronization...", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n", 
+        "name": "Synchronized", 
+        "ptsPossible": 2.0
+      }, 
+      {
+        "description": "Stress Testing Server...", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n", 
+        "name": "Stress", 
+        "ptsPossible": 4.0
+      }, 
+      {
+        "description": "Now I'm just messing with you :)", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n", 
+        "name": "Tricky", 
+        "ptsPossible": 4.0
+      }, 
+      {
+        "description": "Checking for memory leaks...", 
+        "ptsEarned": 0.0, 
+        "log": "Trying to compile your code...\nFAILED TO COMPILE!\nwearable_server.c: In function \u2018user_request_thread\u2019:\nwearable_server.c:130:7: error: unused variable \u2018socketfd\u2019 [-Werror=unused-variable]\n   int socketfd = *((int *)args);\n       ^\ncc1: all warnings being treated as errors\nmake: *** [wearable_server] Error 1\n", 
+        "name": "Memory Leak", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "checksum": "9beef800a1926b820a9c7003009333f0c312895d  wearable_server.c", 
+    "revision": "85100"
+  }, 
+  {
+    "timestamp": "2016-05-03 04:00:00.472371", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n2,4c2,4\n< Size:3\n< Median:104\n< Average:102\n---\n> Size:1\n> Median:100\n> Average:100\n7c7\n< Size:3\n---\n> Size:1\n9c9\n< Average:102\n---\n> Average:104\n12c12\n< Size:3\n---\n> Size:1\n14c14\n< Average:102\n---\n> Average:104\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 2.0, 
+        "name": "One Wearable", 
+        "description": "Testing server with one wearable ..."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n2,4c2,4\n< Size:10\n< Median:104\n< Average:106\n---\n> Size:5\n> Median:100\n> Average:104\n7c7\n< Size:10\n---\n> Size:1\n9c9\n< Average:106\n---\n> Average:104\n12,14c12,14\n< Size:10\n< Median:104\n< Average:106\n---\n> Size:4\n> Median:111\n> Average:109\n17,19c17,19\n< Size:12\n< Median:104\n< Average:105\n---\n> Size:5\n> Median:100\n> Average:104\n22c22\n< Size:12\n---\n> Size:2\n24c24\n< Average:105\n---\n> Average:104\n27,29c27,29\n< Size:12\n< Median:104\n< Average:105\n---\n> Size:5\n> Median:111\n> Average:108\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 2.0, 
+        "name": "Two Wearable", 
+        "description": "Testing server with two wearables"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n2,4c2,4\n< Size:1541\n< Median:99\n< Average:99\n---\n> Size:472\n> Median:104\n> Average:100\n7,9c7,9\n< Size:1541\n< Median:99\n< Average:99\n---\n> Size:516\n> Median:92\n> Average:96\n12,14c12,14\n< Size:1541\n< Median:99\n< Average:99\n---\n> Size:553\n> Median:104\n> Average:100\n17,19c17,19\n< Size:1791\n< Median:101\n< Average:99\n---\n> Size:555\n> Median:104\n> Average:100\n22,24c22,24\n< Size:1791\n< Median:101\n< Average:99\n---\n> Size:596\n> Median:96\n> Average:97\n27,29c27,29\n< Size:1791\n< Median:101\n< Average:99\n---\n> Size:640\n> Median:104\n> Average:100\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 2.0, 
+        "name": "Synchronized", 
+        "description": "Testing Server for synchronization..."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n2c2\n< Size:595\n---\n> Size:180\n4c4\n< Average:101\n---\n> Average:102\n7,9c7,9\n< Size:595\n< Median:102\n< Average:101\n---\n> Size:211\n> Median:101\n> Average:100\n12c12\n< Size:595\n---\n> Size:204\n17c17\n< Size:13600\n---\n> Size:4507\n22,23c22,23\n< Size:13600\n< Median:100\n---\n> Size:4591\n> Median:99\n27c27\n< Size:13600\n---\n> Size:4502\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 4.0, 
+        "name": "Stress", 
+        "description": "Stress Testing Server..."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nRESULTS DIFFERED FROM SOLUTION!\n\n2,4c2,4\n< Size:15\n< Median:120\n< Average:141\n---\n> Size:10\n> Median:126\n> Average:153\n7,9c7,9\n< Size:15\n< Median:120\n< Average:141\n---\n> Size:3\n> Median:104\n> Average:114\n12,14c12,14\n< Size:15\n< Median:120\n< Average:141\n---\n> Size:2\n> Median:124\n> Average:124\n17,19c17,19\n< Size:15\n< Median:120\n< Average:141\n---\n> Size:10\n> Median:126\n> Average:153\n22,24c22,24\n< Size:15\n< Median:120\n< Average:141\n---\n> Size:3\n> Median:104\n> Average:114\n27,29c27,29\n< Size:15\n< Median:120\n< Average:141\n---\n> Size:2\n> Median:124\n> Average:124\n32,34c32,34\n< Size:17\n< Median:104\n< Average:137\n---\n> Size:10\n> Median:126\n> Average:153\n37c37\n< Size:17\n---\n> Size:4\n39c39\n< Average:137\n---\n> Average:111\n42c42\n< Size:17\n---\n> Size:3\n44c44\n< Average:137\n---\n> Average:117\n47,49c47,49\n< Size:22\n< Median:107\n< Average:130\n---\n> Size:11\n> Median:120\n> Average:149\n52,54c52,54\n< Size:22\n< Median:107\n< Average:130\n---\n> Size:4\n> Median:104\n> Average:111\n57,59c57,59\n< Size:22\n< Median:107\n< Average:130\n---\n> Size:7\n> Median:111\n> Average:112\n", 
+        "ptsEarned": 0.0, 
+        "ptsPossible": 4.0, 
+        "name": "Tricky", 
+        "description": "Now I'm just messing with you :)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsEarned": 1.0, 
+        "ptsPossible": 1.0, 
+        "name": "Memory Leak", 
+        "description": "Checking for memory leaks..."
+      }
+    ], 
+    "revision": "85422", 
+    "checksum": "d46e8a8eb59b910955d0eb61b7e526365ce9a503  wearable_server.c"
+  }, 
+  {
+    "timestamp": "2016-05-04 04:00:00.503859", 
+    "testcases": [
+      {
+        "ptsPossible": 2.0, 
+        "ptsEarned": 2.0, 
+        "description": "Testing server with one wearable ...", 
+        "name": "One Wearable", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!"
+      }, 
+      {
+        "ptsPossible": 2.0, 
+        "ptsEarned": 2.0, 
+        "description": "Testing server with two wearables", 
+        "name": "Two Wearable", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!"
+      }, 
+      {
+        "ptsPossible": 2.0, 
+        "ptsEarned": 2.0, 
+        "description": "Testing Server for synchronization...", 
+        "name": "Synchronized", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!"
+      }, 
+      {
+        "ptsPossible": 4.0, 
+        "ptsEarned": 4.0, 
+        "description": "Stress Testing Server...", 
+        "name": "Stress", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!"
+      }, 
+      {
+        "ptsPossible": 4.0, 
+        "ptsEarned": 4.0, 
+        "description": "Now I'm just messing with you :)", 
+        "name": "Tricky", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!"
+      }, 
+      {
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "description": "Checking for memory leaks...", 
+        "name": "Memory Leak", 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.."
+      }
+    ], 
+    "checksum": "468ebb12aacb8ead745d114941d01ea52c734899  wearable_server.c", 
+    "revision": "86117"
+  }, 
+  {
+    "timestamp": "2016-05-05 00:01:00.502827", 
+    "testcases": [
+      {
+        "description": "Testing server with one wearable ...", 
+        "ptsEarned": 2.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "One Wearable", 
+        "ptsPossible": 2.0
+      }, 
+      {
+        "description": "Testing server with two wearables", 
+        "ptsEarned": 2.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "Two Wearable", 
+        "ptsPossible": 2.0
+      }, 
+      {
+        "description": "Testing Server for synchronization...", 
+        "ptsEarned": 2.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "Synchronized", 
+        "ptsPossible": 2.0
+      }, 
+      {
+        "description": "Stress Testing Server...", 
+        "ptsEarned": 4.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "Stress", 
+        "ptsPossible": 4.0
+      }, 
+      {
+        "description": "Now I'm just messing with you :)", 
+        "ptsEarned": 4.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "name": "Tricky", 
+        "ptsPossible": 4.0
+      }, 
+      {
+        "description": "Checking for memory leaks...", 
+        "ptsEarned": 1.0, 
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "name": "Memory Leak", 
+        "ptsPossible": 1.0
+      }
+    ], 
+    "revision": "86954", 
+    "checksum": "468ebb12aacb8ead745d114941d01ea52c734899  wearable_server.c"
+  }, 
+  {
+    "timestamp": "2016-05-06 12:48:05.374279", 
+    "testcases": [
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 2.0, 
+        "ptsEarned": 2.0, 
+        "name": "One Wearable", 
+        "description": "Testing server with one wearable ..."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 2.0, 
+        "ptsEarned": 2.0, 
+        "name": "Two Wearable", 
+        "description": "Testing server with two wearables"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 2.0, 
+        "ptsEarned": 2.0, 
+        "name": "Synchronized", 
+        "description": "Testing Server for synchronization..."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 4.0, 
+        "ptsEarned": 4.0, 
+        "name": "Stress", 
+        "description": "Stress Testing Server..."
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..\nDiffing your output with the expected solution...\nSuccessfully matched solution!", 
+        "ptsPossible": 4.0, 
+        "ptsEarned": 4.0, 
+        "name": "Tricky", 
+        "description": "Now I'm just messing with you :)"
+      }, 
+      {
+        "log": "Trying to compile your code...\nSuccessfully compiled your code..", 
+        "ptsPossible": 1.0, 
+        "ptsEarned": 1.0, 
+        "name": "Memory Leak", 
+        "description": "Checking for memory leaks..."
+      }
+    ], 
+    "checksum": "468ebb12aacb8ead745d114941d01ea52c734899  wearable_server.c", 
+    "revision": "86954"
+  }
+]

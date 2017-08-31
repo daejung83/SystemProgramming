@@ -1,0 +1,190 @@
+#include "camelCaser.h"
+#include <ctype.h>
+#include <stddef.h>
+#include <stdio.h>
+
+char **camel_caser(const char *input_str) {
+
+	//ispunct() isspace() isalpha()
+
+//	int (*p[3])(int c);
+//	p[0] = ispunct;
+//	p[1] = isspace;
+//	p[2] = isalpha;
+
+	int total_ptr_molloc_space = 0;
+	//check malloc space
+	int str_len = strlen(input_str);
+	char* size_read = input_str;
+	
+	//printf("input_str: %s\n", input_str);
+
+	for(int i = 0; i < str_len; i++){
+		if(ispunct(*size_read)){
+			total_ptr_molloc_space++;
+		}
+		size_read++;
+	}
+	size_read = NULL;
+<<<<<<< .mine
+	//printf("total_ptr_num: %d\n", total_ptr_molloc_space);
+	char** output = (char**)malloc(total_ptr_molloc_space*sizeof(char*));
+=======
+	//printf("total_ptr_num: %d\n", total_ptr_molloc_space);
+	char** output = (char**)malloc((total_ptr_molloc_space+1)*sizeof(char*));
+>>>>>>> .r7364
+
+	//printf("test\n");
+	if(total_ptr_molloc_space < 1){
+		//checking for debugging
+<<<<<<< .mine
+		//printf("empty string\n");
+		return NULL;
+=======
+		//printf("empty string or no punct\n");
+		output[0] = (char*)malloc(sizeof(char*)+1);
+		output[0] = "";	
+		//printf("output[0]: %s\n", output[0]);
+		
+		return output;
+>>>>>>> .r7364
+	}
+	char* str = (char*)malloc(str_len+total_ptr_molloc_space+1);
+	//strcpy(str, input_str);
+	int w = 0;
+	char* fix_tok = input_str;
+	for(int k = 0; k < str_len;k++){
+		str[w] = *fix_tok;
+		if(ispunct(*fix_tok)){
+			w++;
+			str[w] = ' '; 
+		}
+		w++;
+		fix_tok++;
+	}
+	//char* tok = malloc(str_len+1);
+	char* tok = strtok(str, ".,!?;:");
+	int index = 0;
+	//if(tok == NULL){
+	//	printf("NULL: tok\n");	
+	//}
+	
+	for(int k = 0; k < total_ptr_molloc_space; k++){
+		
+		//printf("testing %s\n", tok);
+		if(tok == NULL){
+			//printf("tok == NULL\n");
+			output[index] = (char*)malloc(sizeof(char*) + 1);
+			output[index] = "";
+		}else{
+			//printf("else\n");
+			while(isspace(tok[0])){
+				memmove(tok, tok+1, strlen(tok));
+			}
+			if(isalpha(tok[0])){
+				//printf("isalpha inside tok0: %c\n", tok[0]);
+				tok[0] = tolower(tok[0]);
+			}
+			output[index] = (char*)malloc(strlen(tok)+1);
+			//printf("sizeof(tok): %d\n", strlen(tok);
+		
+		
+			//printf("tok: %s\n", tok);
+			strcpy(output[index], tok);
+		}
+
+		tok = strtok(NULL, ".,!?;:");
+		index++;
+	}
+	//printf("is it exiting\n");
+
+	for(int i = 0; i < total_ptr_molloc_space; i++){
+<<<<<<< .mine
+		//printf("output[i]: %s\n", output[i]);
+		size_read = output[i];
+		int str_size = 0;
+		
+		while(*size_read){
+			if(isalpha(*size_read))
+				str_size++;
+			//printf("char: %c\n", *size_read);
+			size_read++;
+		}
+		//printf("str_size: %d\n", str_size);
+		size_read = NULL;
+		//if str_size == 0
+		//
+			char* temp_str = (char*)malloc(str_size +1);
+			char* white_tok = strtok(output[i], " ");
+		if(str_size != 0){
+			strcat(temp_str, white_tok);
+			white_tok = strtok(NULL, " ");
+			while(white_tok){
+				while(isspace(white_tok[0])){
+					memmove(white_tok, white_tok+1, strlen(white_tok));
+				}
+				if(isalpha(white_tok[0])){
+					white_tok[0] = toupper(white_tok[0]);
+				}
+				strcat(temp_str, white_tok);
+				//printf("temp: %s\n", temp_str);
+				white_tok = strtok(NULL, " ");
+=======
+		if(output[i] == ""){
+			//printf("empty test output[i]: %s\n", output[i]);
+		}else{
+	  	//printf("output[i]: %s\n", output[i]);
+	  	size_read = output[i];
+	  	int str_size = 0;
+	  	
+	  	while(*size_read){
+	  		if(isalpha(*size_read))
+	  			str_size++;
+	  		//printf("char: %c\n", *size_read);
+	  		size_read++;
+	  	}
+	  	//printf("str_size: %d\n", str_size);
+	  	size_read = NULL;
+	  	//if str_size == 0
+	  	//
+	  		char* temp_str = (char*)malloc(str_size +1);
+	  		char* white_tok = strtok(output[i], " ");
+	  	if(str_size != 0){
+	  		strcat(temp_str, white_tok);
+	  		white_tok = strtok(NULL, " ");
+	  		while(white_tok){
+	  			while(isspace(white_tok[0])){
+	  				memmove(white_tok, white_tok+1, strlen(white_tok));
+	  			}
+	  			if(isalpha(white_tok[0])){
+	  				white_tok[0] = toupper(white_tok[0]);
+	  			}
+	  			strcat(temp_str, white_tok);
+	  			//printf("temp: %s\n", temp_str);
+	  			white_tok = strtok(NULL, " ");
+	  		}
+>>>>>>> .r7364
+			}
+	  	//printf("before free output\n");
+	  	free(output[i]);
+	  	output[i] = temp_str;
+	  	temp_str = NULL;
+		}	
+	}
+	output[total_ptr_molloc_space] = NULL;
+	
+<<<<<<< .mine
+	for(int j = 0; j < total_ptr_molloc_space; j++){
+		printf("final output %d, %s\n", j, output[j]);
+	}
+=======
+	//for(int j = 0; j <= total_ptr_molloc_space; j++){
+	//	printf("final output %d, %s\n", j, output[j]);
+	//}
+>>>>>>> .r7364
+	free(str);
+	str = NULL;
+	//free(tok);
+
+	return output;	
+}
